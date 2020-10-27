@@ -15,10 +15,11 @@
 
 ## Tasksテーブル
 
-| Column | Type   | Option      |
-| ------ | ------ | ----------- |
-| title  | string | null: false |
-| text   | text   | null: false |
+| Column | Type       | Option                         |
+| ------ | ---------- | ------------------------------ |
+| title  | string     | null: false                    |
+| text   | text       | null: false                    |
+| user   | references | null: false, foreign_key, true |
 
 ###
 
@@ -27,9 +28,11 @@
 
 ## Commentsテーブル
 
-| Column | Type | Option      | 
-| ------ | ---- | ----------- |
-| text   | text | null: false |
+| Column | Type       | Option                         | 
+| ------ | ---------- | ------------------------------ |
+| text   | text       | null: false                    |
+| user   | references | null: false, foreign_key, true |
+| task   | references | null: false, foreign_key, true |
 
 - belongs_to user
 - belongs_to task
