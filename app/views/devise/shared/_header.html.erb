@@ -1,0 +1,20 @@
+<header class='top-page-header'>
+  <h1 class="top-title">iPoc</h1>
+  <div class="usermenu">
+    <div class="dropdown">
+      <button type="button" id="dropdown1"
+          class="btn btn-secondary dropdown-toggle"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false">
+        ユーザーメニュー<i class="fas fa-user"></i>
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdown1">
+        <%= link_to "新規登録", new_user_registration_path, class: "dropdown-item" %>
+        <%= link_to "ログイン", new_user_session_path, class: "dropdown-item"%>
+      </div>
+    </div>
+  </div>  
+</header>
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>

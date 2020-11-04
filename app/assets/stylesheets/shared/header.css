@@ -1,0 +1,19 @@
+.top-page-header {
+  background-color: papayawhip;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-title {
+  padding-left: 10%;
+  color: orange;
+}
+
+.usermenu {
+  padding-right: 5%;
+}
+
+.fas {
+  padding-left: 5px;
+}
