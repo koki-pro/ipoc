@@ -3,3 +3,9 @@
 <% if user_signed_in? %>
   <p><%= current_user.name %>さん、ようこそ</p>
 <% end %>
+
+<div class="task-btn">
+  <%= link_to new_task_path  do %>
+  <span>投稿する</span>
+  <% end %>
+</div>  
