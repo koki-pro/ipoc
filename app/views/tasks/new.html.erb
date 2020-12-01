@@ -5,6 +5,8 @@
 <div class="container mt-5 p-lg-5 bg-light">
   <%= form_with(model: @task, local: true) do |f| %>
 
+  <%= render 'devise/shared/error_messages', model: f.object %>
+
   <div class="container">
     <div class="form-group row">
       <div class="col-md-8">
