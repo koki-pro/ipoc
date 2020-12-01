@@ -2,9 +2,21 @@ a {
   text-decoration: none;
 }
 
-.task-btn {
+.second-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-btn{
   padding-top: 1%;
-  padding-left: 85%;
+  padding-right: 5%;
+}
+
+.user-name {
+  padding-top: 1%;
+  padding-left: 5%;
+  font-size: 20px;
 }
 
 .task-text {
