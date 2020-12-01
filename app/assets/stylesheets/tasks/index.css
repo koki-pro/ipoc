@@ -1,7 +1,3 @@
-a {
-  text-decoration: none;
-}
-
 .second-header {
   display: flex;
   justify-content: space-between;
@@ -22,3 +18,4 @@ a {
 .task-text {
   color: white;
 }
+
