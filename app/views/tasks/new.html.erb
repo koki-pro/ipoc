@@ -1,1 +1,53 @@
-<h1> 投稿画面遷移成功</h1>
+<nav class="navbar navbar-light navbar-dark bg-warning">
+    <a class="navbar-brand"  href="#">ルーティン投稿画面</a>
+</nav>
+
+<div class="container mt-5 p-lg-5 bg-light">
+   <%= form_with(model: @task, local: true) do |form| %>
+
+  <div class="container">
+    <div class="form-group row">
+      <div class="col-md-8">
+        <label for="Name">お名前</label><br />
+        <%= f.text_field :name, class: "form-control" ,id:"name", placeholder:"例) 山田太郎" %>
+      </div>
+    </div>
+  </div>    
+
+  <div class="container">
+    <div class="form-group row">
+      <div class="col-md-8">
+        <%= f.label :Eメール %><br />
+        <%= f.email_field :email, class: "form-control", id: "email", placeholder: "example@gmail.com" %>
+      </div>
+    </div>
+  </div>  
+
+  <div class="container">
+    <div class="form-group row">
+      <div class="col-md-8">
+        <%= f.label :パスワード %>
+        <% if @minimum_password_length %>
+        <em>(<%= @minimum_password_length %> 文字以上)</em>
+        <% end %><br />
+        <%= f.password_field :password, class: "form-control", id: "password", placeholder: "パスワード", autocomplete: "new-password" %>
+      </div>
+    </div>
+  </div> 
+
+  <div class="container">
+    <div class="form-group row">
+      <div class="col-md-8">
+        <%= f.label :パスワード確認 %><br />
+        <%= f.password_field :password_confirmation, class: "form-control", id: "password", placeholder: "パスワード", autocomplete: "new-password" %>
+      </div>
+    </div>
+  </div>  
+
+  <div class="container mt-5">
+    <div class="col-md-4 align-self-center">
+      <%= f.submit "投稿する", class: "btn btn-primary btn-block" %>
+    </div>
+  </div>  
+  <% end %>
+</div>
