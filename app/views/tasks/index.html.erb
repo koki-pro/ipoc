@@ -1,1 +1,17 @@
 <%= render "devise/shared/header" %>
+
+<div class="second-header">
+  <div class=user-name>
+  <% if user_signed_in? %>
+    <p><%= current_user.name %>さん　ようこそ</p>
+  <% end %>
+  </div>
+
+  <div class="task-btn">
+  <div class="btn btn-warning btn-lg">
+    <%= link_to new_task_path, :style=>"text-decoration: none;" do %>
+    <span class="task-text">投稿する<i class="fas fa-pen"></i></span>
+    <% end %>
+  </div>  
+  </div>
+</div>  
