@@ -15,3 +15,16 @@
   </div>  
   </div>
 </div>  
+
+<div class="main-cotent">
+  <div class="contents row">
+    <% @tasks.each do |task| %>
+      <div class="content_post">
+        <p><%= task.title%></p>
+        <span class="text">
+          <%= task.text %>
+        </span>
+      </div>
+    <% end %>
+  </div>
+</div>
