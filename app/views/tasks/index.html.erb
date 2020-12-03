@@ -24,9 +24,9 @@
       <div class="content_post">
         <h1><%= task.title%></h1>
         <ul>
-         <li>
+         <li class="edit-btn">
           <%= link_to edit_task_path(task.id), method: :get do %>
-            <i class="fas fa-trash-alt"></i>
+            <i class="fas fa-edit"></i>
           <% end %>
          </li>
         </ul>
