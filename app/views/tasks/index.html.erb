@@ -15,3 +15,22 @@
   </div>  
   </div>
 </div>  
+
+
+
+<div class="container">
+<div class="main-content">
+    <% @tasks.each do |task| %>
+      <div class="content_post">
+        <h1><%= task.title%></h1>
+        <span class="text">
+          <%= task.text %>
+        </span>
+        <div class="task_user">
+          <%= task.user.name %>
+        </div>
+        <hr>
+      </div>
+    <% end %>
+</div>
+</div>
