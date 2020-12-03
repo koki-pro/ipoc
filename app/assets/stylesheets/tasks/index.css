@@ -30,3 +30,16 @@
   padding-top: 10px;
   font-size: 25px;
 }
+
+.user-list {
+  font-size: 15px;
+  padding-right: 15px;
+}
+
+.edit-btn {
+  display: inline;
+}
+
+.trash-btn {
+  display: inline;
+}
