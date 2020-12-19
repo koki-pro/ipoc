@@ -29,7 +29,7 @@
 
 ## 💪ER図
 
-https://gyazo.com/af0823e5617ccc772b36c8a14d0dee36
+![ER図](https://gyazo.com/9835835ba877cdeb7f78ef096a71d49f "サンプル")
 
 
 # テーブル設計
